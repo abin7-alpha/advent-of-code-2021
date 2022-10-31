@@ -1,22 +1,14 @@
-#A: 607 (N/A - no previous sum)
-#B: 618 (increased)
-#C: 618 (no change)
-#D: 617 (decreased)
-#E: 647 (increased)
-#F: 716 (increased)
-#G: 769 (increased)
-#H: 792 (increased)
-#In this example, there are 5 sums that are larger than the previous sum.
-#
-#Consider sums of a three-measurement sliding window. How many sums are larger than the previous sum?
-
+"""For calculating the count of greater previous value"""
 def cal_pre_values(array):
     total_pre_values = 0
     count = 0
     while count != len(array) - 1:
+
+        #checks if the number is greater than previous number
         if array[count] < array[count + 1]:
             total_pre_values += 1
         count += 1
+
     return total_pre_values
 
 array = []

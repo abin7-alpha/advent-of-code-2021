@@ -1,3 +1,4 @@
+"""Calculate the values according to the position of the submarine"""
 def final_depth(array):
     value1 = 0
     value2 = 0
